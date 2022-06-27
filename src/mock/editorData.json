@@ -1,0 +1,37 @@
+{
+  "projectId": "xxx",
+  "projectName": "xxx",
+  "author": "xxx",
+  "comment": "这里是低代码作品的存储json, 用来记录页面结构,下面是组件示例",
+  "data": [
+    {
+      "id": "1",
+      "type": "text",
+      "data": "xxxxxx",
+      "color": "#000000",
+      "size": "12px",
+      "width": "100px",
+      "height": "100px",
+      "left": "100px",
+      "top": "100px"
+    },
+    {
+      "id": "2",
+      "type": "image",
+      "data": "http://xxxxxxx",
+      "width": "100px",
+      "height": "100px",
+      "left": "100px",
+      "top": "100px"
+    },
+    {
+      "id": "3",
+      "type": "video",
+      "data": "http://xxxxxxx",
+      "width": "100px",
+      "height": "100px",
+      "left": "100px",
+      "top": "100px"
+    }
+  ]
+}
