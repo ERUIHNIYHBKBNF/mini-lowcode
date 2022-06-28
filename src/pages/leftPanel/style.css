@@ -2,3 +2,13 @@
   height: 100vh;
   width: 25vw;
 }
+.leftMaterialContiner {
+  margin: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 20px;
+  align-items: center;
+  justify-items: center;  
+  justify-content: center;
+  align-content: center;
+}
