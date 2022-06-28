@@ -4,6 +4,7 @@ export enum COMPONENT_TYPE {
   IMAGE = 'image',
   AUDIO = 'audio',
   CARD = 'card',
+  TEXT_DROPED = 'text-droped',
 }
 
 export enum RIGHT_PANEL_TYPE {

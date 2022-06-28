@@ -18,7 +18,7 @@ function App() {
       <div className="App">
         <LeftPanel />
         <MidPanel
-          key={`${drawPanelData.length}`}
+          key={`${drawPanelData.length}-${Math.random()}`}
           data={drawPanelData}
           setRightPanelType={setRightPanelType}
           setRightRanelElementId={setRightRanelElementId}
