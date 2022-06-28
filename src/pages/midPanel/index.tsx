@@ -1,13 +1,14 @@
 import React from "react";
-import { RIGHT_PANEL_TYPE } from "../../consts/types";
+import { RIGHT_PANEL_TYPE, ElementType } from "../../consts/types";
 import './style.css';
 
 type DrawPanelProps = {
-  data: any;
+  data: Array<ElementType>;
   setRightPanelType: Function;
+  setRightRanelElementId: Function;
 }
 
-export default function MidPanel({data, setRightPanelType}: DrawPanelProps) {
+export default function MidPanel({data, setRightPanelType, setRightRanelElementId}: DrawPanelProps) {
   const generateContent = () => {
     const ret = [];
     for (const item of data) {
@@ -19,6 +20,7 @@ export default function MidPanel({data, setRightPanelType}: DrawPanelProps) {
               onClick={() => {
                 console.log(`clicked: item ${item.id}`);
                 setRightPanelType(RIGHT_PANEL_TYPE.TEXT);
+                setRightRanelElementId(item.id);
               }}
               style={{
                 color: item.color,

@@ -13,3 +13,9 @@ export enum RIGHT_PANEL_TYPE {
   IMAGE = 'image',
   CARD = 'card',
 }
+
+export type ElementType = {
+  id: string;
+  type: string;
+  [prop: string]: any;
+};

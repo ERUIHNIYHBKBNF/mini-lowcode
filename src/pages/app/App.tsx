@@ -11,13 +11,23 @@ import { RIGHT_PANEL_TYPE } from '../../consts/types';
 function App() {
   const [drawPanelData, setDrawPanelData] = useState([...drawData.data]);
   const [rightPanelType, setRightPanelType] = useState(RIGHT_PANEL_TYPE.TEXT);
+  const [rightRanelElementId, setRightRanelElementId] = useState('');
 
   return (
     <DndProvider backend={HTML5Backend}>
       <div className="App">
         <LeftPanel />
-        <MidPanel data={drawPanelData} setRightPanelType={setRightPanelType} />
-        <RightPanel />
+        <MidPanel
+          data={drawPanelData}
+          setRightPanelType={setRightPanelType}
+          setRightRanelElementId={setRightRanelElementId}
+        />
+        <RightPanel
+          type={rightPanelType}
+          data={drawPanelData}
+          elementId={rightRanelElementId}
+          setDrawPanelData={setDrawPanelData}
+        />
       </div>
     </DndProvider>
   );

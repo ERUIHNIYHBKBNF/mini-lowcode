@@ -2,3 +2,18 @@
   height: 100vh;
   width: 25vw;
 }
+.flex-row-space-between {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.text-config-item {
+  margin: 5px 0;
+}
+.rightFormContainer {
+  height: calc(100vh - 75px);
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
