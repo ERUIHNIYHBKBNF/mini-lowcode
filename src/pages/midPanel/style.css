@@ -3,4 +3,10 @@
   width: 50vw;
   border-left: 2px solid black;
   border-right: 2px solid black;
+  
+}
+.midItemsContainer {
+  position: relative;
+  height: calc(100% - 75px);
+  width: 100%;
 }
