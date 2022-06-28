@@ -18,9 +18,11 @@ function App() {
       <div className="App">
         <LeftPanel />
         <MidPanel
+          key={`${drawPanelData.length}`}
           data={drawPanelData}
           setRightPanelType={setRightPanelType}
           setRightRanelElementId={setRightRanelElementId}
+          setData={setDrawPanelData}
         />
         <RightPanel
           type={rightPanelType}
